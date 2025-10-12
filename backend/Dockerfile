@@ -6,13 +6,13 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y maven && rm -rf /var/lib/apt/lists/*
 
 # Copy pom.xml first for better caching
-COPY backend/pom.xml .
+COPY pom.xml .
 
 # Download dependencies
 RUN mvn dependency:go-offline -B
 
 # Copy source code
-COPY backend/src ./src
+COPY src ./src
 
 # Build the application
 RUN mvn clean package -DskipTests
