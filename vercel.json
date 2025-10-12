@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/pom.xml",
+      "use": "@vercel/java"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "JWT_SECRET": "mySecretKey123456789012345678901234567890",
+    "PORT": "8080"
+  }
+}
