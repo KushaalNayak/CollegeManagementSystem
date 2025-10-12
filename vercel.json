@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "backend/pom.xml",
-      "use": "@vercel/java"
+      "use": "@vercel/java",
+      "config": {
+        "installCommand": "curl -s https://get.sdkman.io | bash && source ~/.sdkman/bin/sdkman-init.sh && sdk install maven 3.9.6 && mvn dependency:resolve"
+      }
     }
   ],
   "routes": [
@@ -13,7 +16,6 @@
     }
   ],
   "env": {
-    "JWT_SECRET": "mySecretKey123456789012345678901234567890",
-    "PORT": "8080"
+    "JWT_SECRET": "mySecretKey123456789012345678901234567890"
   }
 }
