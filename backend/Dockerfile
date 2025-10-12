@@ -1,13 +1,15 @@
-FROM openjdk:17-jdk-slim
+FROM maven:3.8.6-openjdk-17-slim
 
 WORKDIR /app
 
-# Copy Maven files
+# Copy pom.xml first for better caching
 COPY pom.xml .
-COPY src ./src
 
-# Install Maven
-RUN apt-get update && apt-get install -y maven
+# Download dependencies
+RUN mvn dependency:go-offline -B
+
+# Copy source code
+COPY src ./src
 
 # Build the application
 RUN mvn clean package -DskipTests
