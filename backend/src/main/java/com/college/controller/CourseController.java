@@ -3,6 +3,7 @@ package com.college.controller;
 import com.college.dto.ApiResponse;
 import com.college.entity.Course;
 import com.college.repository.CourseRepository;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
