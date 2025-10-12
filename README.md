@@ -67,23 +67,29 @@ npm run dev
 - **Backend API:** http://localhost:8080/api
 - **Swagger UI:** http://localhost:8080/api/swagger-ui.html
 
-## 🌐 Deployment (Vercel)
+## 🌐 Deployment Options
 
-### Complete Vercel Deployment
+### Option 1: Netlify (Recommended - Easier)
+1. **Frontend:** Deploy to Netlify (drag & drop or Git)
+2. **Backend:** Deploy to Railway/Render
+3. **Database:** Use Supabase (free PostgreSQL)
+4. **Quick Setup:** Run `netlify-deploy.bat` for guided deployment
+
+### Option 2: Vercel (Alternative)
 1. **Frontend & Backend:** Deploy both to Vercel
 2. **Database:** Use Supabase (free PostgreSQL)
 3. **Quick Setup:** Run `vercel-deploy.bat` for guided deployment
 
-### Quick Deploy Steps:
-1. Go to [Vercel](https://vercel.com) and sign in with GitHub
-2. Import your repository: `KushaalNayak/CollegeManagementSystem`
-3. Deploy frontend first (select `frontend` folder)
-4. Deploy backend second (select `backend` folder)
-5. Add database at [Supabase](https://supabase.com)
-6. Configure environment variables
-7. Your website is live! 🎉
+### Quick Deploy Steps (Netlify):
+1. Go to [Netlify](https://netlify.com) and sign in with GitHub
+2. Click "New site from Git"
+3. Select your repository: `KushaalNayak/CollegeManagementSystem`
+4. Set base directory to `frontend`
+5. Build command: `npm run build`
+6. Publish directory: `build`
+7. Deploy! Your website is live! 🎉
 
-**For detailed steps, see:** `VERCEL_DEPLOYMENT_GUIDE.md`
+**For detailed steps, see:** `NETLIFY_DEPLOYMENT_GUIDE.md` or `VERCEL_DEPLOYMENT_GUIDE.md`
 
 ## 📱 User Roles
 
