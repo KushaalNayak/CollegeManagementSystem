@@ -29,6 +29,9 @@ public class SimpleAuthController {
     public static class LoginRequest {
         public String email;
         public String password;
+        
+        public String getEmail() { return email; }
+        public String getPassword() { return password; }
     }
 
     public static class SignupRequest {

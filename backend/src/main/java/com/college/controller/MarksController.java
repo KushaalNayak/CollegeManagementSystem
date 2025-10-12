@@ -2,6 +2,7 @@ package com.college.controller;
 
 import com.college.dto.ApiResponse;
 import com.college.entity.Marks;
+import com.college.entity.Student;
 import com.college.repository.MarksRepository;
 import com.college.repository.StudentRepository;
 import com.college.security.UserPrincipal;

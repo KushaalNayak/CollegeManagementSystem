@@ -2,6 +2,7 @@ package com.college.controller;
 
 import com.college.dto.ApiResponse;
 import com.college.entity.Fees;
+import com.college.entity.Student;
 import com.college.repository.FeesRepository;
 import com.college.repository.StudentRepository;
 import com.college.security.UserPrincipal;
