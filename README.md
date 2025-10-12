@@ -67,23 +67,23 @@ npm run dev
 - **Backend API:** http://localhost:8080/api
 - **Swagger UI:** http://localhost:8080/api/swagger-ui.html
 
-## 🌐 Deployment
+## 🌐 Deployment (Vercel)
 
-### Backend Deployment (Railway - FREE)
-1. Go to [Railway](https://railway.app)
-2. Sign up with GitHub
-3. Click "New Project" → "Deploy from GitHub repo"
-4. Select your repository and `backend` folder
-5. Add PostgreSQL database
-6. Railway auto-deploys!
+### Complete Vercel Deployment
+1. **Frontend & Backend:** Deploy both to Vercel
+2. **Database:** Use Supabase (free PostgreSQL)
+3. **Quick Setup:** Run `vercel-deploy.bat` for guided deployment
 
-### Frontend Deployment (Vercel - FREE)
-1. Go to [Vercel](https://vercel.com)
-2. Sign up with GitHub
-3. Import your repository
-4. Select `frontend` folder
-5. Add environment variable: `REACT_APP_API_URL=https://your-backend-url.railway.app/api`
-6. Deploy!
+### Quick Deploy Steps:
+1. Go to [Vercel](https://vercel.com) and sign in with GitHub
+2. Import your repository: `KushaalNayak/CollegeManagementSystem`
+3. Deploy frontend first (select `frontend` folder)
+4. Deploy backend second (select `backend` folder)
+5. Add database at [Supabase](https://supabase.com)
+6. Configure environment variables
+7. Your website is live! 🎉
+
+**For detailed steps, see:** `VERCEL_DEPLOYMENT_GUIDE.md`
 
 ## 📱 User Roles
 

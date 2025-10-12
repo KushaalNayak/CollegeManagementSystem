@@ -1,10 +1,10 @@
 @echo off
 echo ========================================
-echo 🚀 EASY DEPLOYMENT - Just Follow These Steps!
+echo 🚀 VERCEL DEPLOYMENT - Complete Setup!
 echo ========================================
 echo.
 
-echo 🎯 Option 1: Vercel (Recommended - Easiest)
+echo 🎯 Vercel Deployment (Recommended)
 echo ========================================
 echo.
 echo Step 1: Deploy Frontend (5 minutes)
@@ -35,24 +35,6 @@ echo 4. Copy database URL
 echo 5. Add to backend environment variables in Vercel
 echo.
 
-echo 🎯 Option 2: Railway (Alternative)
-echo ========================================
-echo 1. Click Railway link below
-echo 2. Sign in with GitHub
-echo 3. Click "Deploy from GitHub repo"
-echo 4. Select your repo
-echo 5. Railway auto-detects everything! ✅
-echo.
-
-echo 🎯 Option 3: Render (Another Alternative)
-echo ========================================
-echo 1. Click Render link below
-echo 2. Sign up with GitHub
-echo 3. Click "New +"
-echo 4. Select "Web Service"
-echo 5. Connect your GitHub repo
-echo 6. Auto-deploy! ✅
-echo.
 
 echo 🎉 What You'll Get:
 echo ========================================
@@ -67,11 +49,9 @@ echo ✅ Responsive Design
 echo ✅ Professional UI/UX
 echo.
 
-echo 🚀 Opening Deployment Platforms...
+echo 🚀 Opening Vercel and Database...
 echo ========================================
 start https://vercel.com
-start https://railway.app
-start https://render.com
 start https://supabase.com
 
 echo.
