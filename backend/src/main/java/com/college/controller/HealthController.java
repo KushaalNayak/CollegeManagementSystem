@@ -1,7 +1,5 @@
 package com.college.controller;
 
-import com.college.dto.ApiResponse;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -10,7 +8,12 @@ import org.springframework.web.bind.annotation.*;
 public class HealthController {
 
     @GetMapping("/health")
-    public ResponseEntity<ApiResponse> health() {
-        return ResponseEntity.ok(new ApiResponse(true, "API is running", null));
+    public String health() {
+        return "OK";
+    }
+    
+    @GetMapping("/")
+    public String root() {
+        return "College Management System API is running!";
     }
 }
