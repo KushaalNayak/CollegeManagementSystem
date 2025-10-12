@@ -7,6 +7,7 @@ import com.college.dto.SignUpRequest;
 import com.college.entity.User;
 import com.college.repository.UserRepository;
 import com.college.security.JwtTokenProvider;
+import com.college.security.UserPrincipal;
 import com.college.service.CustomUserDetailsService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
