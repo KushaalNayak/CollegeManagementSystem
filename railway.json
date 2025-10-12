@@ -1,0 +1,10 @@
+{
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "backend/Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "java -jar target/college-management-system-1.0.0.jar",
+    "healthcheckPath": "/api/health"
+  }
+}

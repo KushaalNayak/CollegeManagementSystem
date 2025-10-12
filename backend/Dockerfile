@@ -2,8 +2,18 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+# Copy Maven files
+COPY pom.xml .
+COPY src ./src
 
+# Install Maven
+RUN apt-get update && apt-get install -y maven
+
+# Build the application
+RUN mvn clean package -DskipTests
+
+# Expose port
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the application
+CMD ["java", "-jar", "target/college-management-system-1.0.0.jar"]
